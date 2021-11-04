@@ -23,7 +23,7 @@ public abstract class MagicMonster extends Monster{
     public void restoreMp(int restoreMps){
         setMagicPoints(getMagicPoints() + restoreMps);
         if (getMagicPoints() > maxMP){
-            setMagicPoints(getMagicPoints());
+            setMagicPoints(maxMP);
         }
     }
 
